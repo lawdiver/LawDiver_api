@@ -1,0 +1,43 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*api*key*
+
+# Dependencies
+node_modules/
+typescript/node_modules/
+python/.venv/
+python/venv/
+.venv/
+venv/
+
+# Build / cache
+dist/
+typescript/dist/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tsbuildinfo
+
+# Output artifacts from examples
+output/
+*.pdf
+!docs/**/*.pdf
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*

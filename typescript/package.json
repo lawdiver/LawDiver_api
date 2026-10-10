@@ -1,0 +1,45 @@
+{
+  "name": "@lawdiver/api-examples",
+  "version": "1.0.0",
+  "description": "TypeScript examples client for the LawDiver API (clone-and-copy; not published to npm)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --import tsx --test test/client.test.ts",
+    "example:search": "tsx examples/01-search.ts",
+    "example:cite-check": "tsx examples/02-cite-check.ts",
+    "example:retrieve": "tsx examples/03-retrieve.ts",
+    "example:document": "tsx examples/04-document-cite-check.ts",
+    "example:agent": "tsx examples/05-agent-search.ts",
+    "example:usage": "tsx examples/06-usage.ts",
+    "example:good-law": "tsx examples/07-good-law-cited-by.ts",
+    "example:goodlaw-check": "tsx examples/09-goodlaw-check.ts",
+    "example:statute": "tsx examples/08-statute-retrieve.ts",
+    "example:boolean": "tsx examples/10-boolean-search.ts",
+    "example:bulk": "tsx examples/10-bulk-upload.ts",
+    "examples": "npm run example:search && npm run example:cite-check && npm run example:retrieve && npm run example:statute && npm run example:usage"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "lawdiver",
+    "legal-api",
+    "citation-checker",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

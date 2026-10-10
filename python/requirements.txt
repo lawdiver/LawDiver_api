@@ -1,0 +1,4 @@
+# LawDiver API Python examples
+# https://lawdiver.com/docs/api
+httpx>=0.27.0
+python-dotenv>=1.0.0
